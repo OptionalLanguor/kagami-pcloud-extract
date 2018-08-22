@@ -1,16 +1,16 @@
-# kagami-pc-cloud-extract
+# kagami-pcloud-extract
 
-## build
+## Build
 
-´´´shell
+```shell
 cmake .
 make
 
-´´´
+```
 
-## run
+## Run
 
-´´´shell
+```shell
 ./kagami-pcloud-extract.exe simple-dataset/ground-truth/0000000410.png
 
-´´´
+```
