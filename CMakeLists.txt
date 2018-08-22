@@ -38,9 +38,6 @@ find_package(OpenCV REQUIRED)
 if(OpenCV_FOUND)
 	include_directories(${OpenCV_INCLUDE_DIRS})
 	link_directories(${OpenCV_LIB_DIR})
-  #link_directories(${OpenCV_LIBRARY_DIRS})
-  #add_definitions(${OpenCV_DEFINITIONS})
-
 endif()
 
 if(NOT OpenCV_FOUND)
@@ -49,10 +46,10 @@ endif(NOT OpenCV_FOUND)
 
 ################################################################################
 # FILES
+
 set(HDRS
     #src/<header>.hpp
 )
-
 
 set(SRCS
     src/main.cpp
@@ -60,15 +57,18 @@ set(SRCS
 
 ################################################################################
 # EXEC
+
 add_executable(${PROJECT_NAME} ${HDRS} ${SRCS})
 
-
 # LIBS
+
 set(LIBS
     ${OpenCV_LIBS}
 )
 
 # LINK
+
 target_link_libraries(${PROJECT_NAME} ${LIBS})
 
-#Install
+# Install
+# ...
